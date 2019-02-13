@@ -15,4 +15,5 @@ docker run --rm kaczmarj/neurodocker:0.4.3 generate docker \
   --add-to-entrypoint 'source $FSLDIR/etc/fslconf/fsl.sh' \
   -r 'cp /neurodocker/startup.sh /singularity' \
   -r 'mkdir /scratch && mkdir /work && mkdir /apps && mkdir /apps2' \
+  -r 'touch $FREESURFER_HOME/license.txt' \
   > Dockerfile

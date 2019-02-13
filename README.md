@@ -9,6 +9,8 @@
 
 ## Important Directories, Files, and Variables
 - `FREESURFER_HOME="/usr/local/freesurfer"`
+- `$FREESURFER_HOME/license.txt`
+    - This is an empty file that you need to mount/bind your actual license to
 - `FSLDIR="/usr/local/fsl"`
 - `/scratch`
 - `/work`
