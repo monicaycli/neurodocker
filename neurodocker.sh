@@ -16,4 +16,8 @@ docker run --rm kaczmarj/neurodocker:0.4.3 generate docker \
   -r 'cp /neurodocker/startup.sh /singularity' \
   -r 'mkdir /scratch && mkdir /work && mkdir /apps && mkdir /apps2' \
   -r 'touch $FREESURFER_HOME/license.txt' \
+  --install libopenblas-base \
+  -e LD_LIBRARY_PATH=/usr/lib/openblas-base/:$LD_LIBRARY_PATH \
+  --install git g++ python python-numpy libeigen3-dev zlib1g-dev libqt4-opengl-dev libgl1-mesa-dev libfftw3-dev libtiff5-dev \
+  --mrtrix3 version=3.0_RC3 \
   > Dockerfile

@@ -1,4 +1,5 @@
-# fsl6_freesurfer6
+# The Purdue Container
+Built with [neurodocker](https://github.com/kaczmarj/neurodocker)
 
 ## Base Image
 - neurodebian:jessie
@@ -6,6 +7,7 @@
 ## Additional Software Installed
 - [FSL 6.0.0](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki)
 - [FreeSurfer 6.0.0](https://surfer.nmr.mgh.harvard.edu/fswiki/FreeSurferWiki)
+- [MRtrix](http://www.mrtrix.org/)
 
 ## Important Directories, Files, and Variables
 - `FREESURFER_HOME="/usr/local/freesurfer"`
